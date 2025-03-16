@@ -90,14 +90,8 @@ $DOCKER build -t thingino-dev .
 # Run a container in interactive mode and mount the source files in it
 
 $DOCKER run --rm -it --userns=keep-id \
--v $(pwd)/workspace:/home/me \
--v $BR2_DL_DIR:/home/me/downloads \
-thingino-dev:latest
-
- #fixes docker user error
-# docker run --rm -it --user $(id -u):$(id -g) \
- # -v "$(pwd)/workspace":/home/me \
-#  -v "$BR2_DL_DIR":/home/me/downloads \
-#  thingino-dev:latest
+	-v $(pwd)/workspace:/home/me \
+	-v $BR2_DL_DIR:/home/me/downloads \
+	thingino-dev:latest bash
 
 exit 0
