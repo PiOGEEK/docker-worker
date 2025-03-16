@@ -80,7 +80,7 @@ done
 $DOCKER build -t thingino-dev .
 
 [ -d workspace/thingino ] || git clone --recurse-submodules \
-	https://github.com/themactep/thingino-firmware.git \
+	https://github.com/piogeek/thingino-firmware.git \
 	workspace/thingino
 
 [ -z "$BR2_DL_DIR" ] && BR2_DL_DIR="$(pwd)/workspace/downloads"
