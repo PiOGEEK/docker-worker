@@ -92,6 +92,6 @@ $DOCKER build -t thingino-dev .
 $DOCKER run --rm -it --userns=keep-id \
 	-v $(pwd)/workspace:/home/me \
 	-v $BR2_DL_DIR:/home/me/downloads \
-	thingino-dev:latest bash
+	thingino-dev:latest
 
 exit 0
