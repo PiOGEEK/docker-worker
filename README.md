@@ -5,7 +5,7 @@ Podman/Docker container for developing [Thingino firmware][1]
 in a standardized and reproducible environment.
 
 ```
-git clone https://github.com/themactep/docker-worker.git ~/docker-worker
+git clone https://github.com/piogeek/docker-worker.git ~/docker-worker
 cd ~/docker-worker
 ./run.sh
 ```
